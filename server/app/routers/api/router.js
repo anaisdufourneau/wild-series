@@ -9,6 +9,9 @@ router.get("/", wildSeries);
 /* ************************************************************************* */
 // Import And Use Routers Here
 /* ************************************************************************* */
+const programRouter = require("./programs/router");
+
+router.use("/programs", programRouter);
 
 const itemsRouter = require("./items/router");
 
